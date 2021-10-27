@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="./css/Vi Thanh Nhàn.css">
+    <title>Charlie Puth</title>
+</head>
+<body>
+    <div id="menutop">
+        <div class="namemenu">
+            <h1 >Charlie Puth</h1>
+        </div> 
+        <div class="tabmenu">
+        <ul>
+            <li>
+                 <a href="11186378-Vi Thanh Nhàn.html">Home</a>
+                <ul>
+                    <li><a href="./site/Bio.html">Bio</a></li>
+                    <li><a href="./site/tour.html">Tour</a></li>
+                    <li><a href="./site/merch.html">Merch</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Music</a>
+                <ul>
+                    <li><a href="">Cover</a></li>
+                    <li><a href="">Top hit</a></li>
+                    <li><a href="">Album Hit 2020</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Video</a>
+                <ul>
+                    <li><a href="">I warned myself</a></li>
+                    <li><a href="">Cheating on you</a></li>
+                    <li><a href="">Mother</a></li>
+                    <li><a href="">Hard on yourself</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">News</a>
+                <ul>
+                    <li><a href="">YOOP LIVE VIRTUAL CONCERT ON MARCH 31</a></li>
+                    <li><a href="">"HARD ON YOURSELF" OUT NOW</a></li>
+                    <li><a href="">GIRLFRIEND VIDEO OUT NOW</a></li>
+                </ul>
+            </li>
+        </ul>
+        </div>
+        <div class="icon">
+            <a href=""> <a href="" class="fa fa-facebook"></a> </a>
+            <a href=""> <a href="" class="fa fa-youtube"></a> </a>
+            <a href=""> <a href="" class="fa fa-twitter"></a> </a>
+            <a href=""> <a href="" class="fa fa-instagram"></a></a>
+            <a href=""> <a href="" class="fa fa-spotify"></a></a>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Tìm kiếm">
+            <span class="glyphicon glyphicon-search"></span>
+        </div>
+    <div id="banner">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./image/charlie-Puth (2).jpg" >
+            <div class="text">Charlie-Puth từ kẻ trầm mặc trở thành ngôi sao thế giới </div>
+    </div>
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="./image/2035204710-charlie-puth.jpg" >
+        <div class="text">Charlie Puth thần đồng âm nhạc đẹp trai</div>
+        </div>
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="./image/charlie-puth-how-long.jpg" >
+        <div class="text">Hành trình khẳng định mình của chàng ca sĩ lãng tử</div>
+    </div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+    </div>
+    <div id="footer">
+        <p>Website by Vi Thanh Nhàn - K60 Thương Mại Điện Tử NEU</p>
+    </div>
+</body>
+</html>
